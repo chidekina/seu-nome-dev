@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome Dev</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main>
+        <img src="imgs/hacker.svg" alt="Hacker picture">
+        <div id="dev-name">
+            <div id="title">
+                <h4>Descubra seu nome de</h4><br>
+                <h1>PROGRAMADOR</h1>
+            </div>
+            <div id="month-day">
+                <div class="month-day__value">
+                    <label for="month-day__value-day">Digite seu dia</label>
+                    <input type="number" min="1" max="31" id="month-day__value-day"/>
+                </div>
+                <div class="month-day__value">
+                   <label for="month-day__value-month">Escolha seu mês</label>
+                    <select id="month-day__value-month">
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                </div>
+            </div>
+            <div id="result">
+                <h6>Seu nome é</h6>
+                <h4></h4>
+            </div>
+        </div>
+    </main>
+    <script src="app/app.js"></script>
+</body>
+</html>

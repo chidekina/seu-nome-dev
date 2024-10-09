@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #00BD26;
+    --text-color: #FFFFFF;
+    --gradient-green: linear-gradient(180deg, #37C000 48.87%, #000000 92.56%);
+    --main-font: "Cutive Mono", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+main {
+    display: flex;
+}
+
+img {
+    width: 618px;
+    margin-top: 76px;
+}
+#dev-name {
+    margin-top: 40px;
+    margin-right: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+#title {
+
+    & h4 {
+        color: var(--text-color);
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    & h1 {
+        background: var(--gradient-green);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-size: 84px;
+        font-weight: 400;
+        letter-spacing: 4px;
+    }
+}
+
+#month-day {
+    margin: 120px 0 85px 0;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+
+}
+
+.month-day__value {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 26px;
+    color: var(--text-color);
+}
+
+    & select, input {
+        width: 300px;
+        height: 50px;
+        font-weight: 700;
+        &:focus{
+
+           outline: 2px solid var(--secondary-color);
+           outline-offset: 1.5px;
+        }
+    }
+
+#result {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & h6{
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    & h4 {
+        font-size: 40px;
+    }
+}
